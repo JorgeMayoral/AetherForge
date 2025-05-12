@@ -1,0 +1,5 @@
+[[language]]
+name = "go"
+auto-format = true
+formatter = { command = "go", args = ["fmt"] }
+language-servers = ["gopls"]

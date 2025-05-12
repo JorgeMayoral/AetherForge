@@ -1,0 +1,22 @@
+#!/usr/bin/env nu
+
+def upgrade_pkg [pkg: string] {
+    print $"Upgrading ($pkg)..."
+    nix profile upgrade $pkg
+    print $"($pkg) upgraded!\n"
+}
+
+def main [pkg?: string] {
+    if ($pkg | is-empty)  {
+        print "Updating all nix packages..."
+        let pkgs = open ~/dotfiles/nix-packages | lines
+        for p in $pkgs {
+            upgrade_pkg $p
+        }
+        notify-send "Nix packages upgraded!" "All installed nix packages have been upgraded" -i software-update-available-symbolic
+        return
+    } else {
+        upgrade_pkg $pkg
+        notify-send "Nix package upgraded!" $"($pkg) has been upgraded" -i software-update-available-symbolic
+    }
+}

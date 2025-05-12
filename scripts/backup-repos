@@ -1,0 +1,19 @@
+#!/usr/bin/env nu
+
+let repos = [
+    {name: "tui-game", path: "/home/yorch/PoCs/tui-game"},
+    {name: "yorch.dev", path: "https://github.com/JorgeMayoral/yorch.dev.git"}
+]
+
+for repo in $repos {
+    let name = $repo.name
+    let path = $repo.path
+    if (echo $path | str starts-with "http") {
+        gh repo clone $path -- --bare
+    } else {
+        git clone --bare $path
+    }
+    tar -czf $"($name).git.tar.gz" $"./($name).git"
+    sha256sum $"./($name).git.tar.gz" | save $"($name).git.tar.gz.sha256"
+    rm -rf $"($name).git"
+}

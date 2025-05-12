@@ -1,0 +1,28 @@
+#!/usr/bin/env nu
+
+let now = date now | format date "%Y-%m-%d_%H%M"
+let documents = $"($env.HOME)/Documents"
+let ssh = $"($env.HOME)/.ssh"
+let backup_filename = $"backup-($now).tar.gz"
+cd $documents
+mkdir "backup"
+
+print "Backing up GPG keys"
+gpg --export --export-options backup --output backup/public.gpg
+gpg --export-secret-keys --export-options backup --output backup/private.gpg
+gpg --export-ownertrust | save -f backup/trust.gpg
+
+print "Backing up SSH keys"
+ls $ssh | where name !~ known | each { |key| cp $key.name ./backup }
+
+tar -czf $backup_filename backup
+rm -rf backup
+
+print "GPG keys and SSH keys backed up.
+Fix ssh keys permissions, set to 600 for private keys and 644 for public keys.
+
+Remember to check:
+- Files that need to be saved in Documents, Images...
+- Projects with changes not pushed to remote
+- Generate a backup of the passwords in Proton Pass"
+notify-send -e -a "Backup complete" "GPG keys & SSH keys backup completed" $"Your backup has been saved in ($documents)/($backup_filename)" --icon=network-wireless-encrypted-symbolic -t 3000

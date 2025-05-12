@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+zellij ls > /dev/null 2>&1
+
+if [ $? -ne 0 ]; then
+    zellij
+else
+    last_session=$(zellij ls | tail -n 1 | awk '{print $1}' | sed 's/\x1b\[[0-9;]*m//g')
+    zellij attach "$last_session"
+fi

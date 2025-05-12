@@ -1,0 +1,4 @@
+killall waybar
+waybar & disown
+waybar -c ~/.config/waybar/bottombar-config.jsonc & disown
+

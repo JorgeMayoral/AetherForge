@@ -1,0 +1,16 @@
+#!/bin/bash
+
+PROGRAM_LIST_FILE="/home/yorch/dotfiles/programs.txt"
+
+if [[ ! -f "$PROGRAM_LIST_FILE" ]]; then
+  echo "Error: $PROGRAM_LIST_FILE does not exist."
+  exit 1
+fi
+
+while IFS= read -r program; do
+  if command -v "$program" &> /dev/null; then
+    echo "[✔️] $program is installed"
+  else
+    echo "[❌] $program is not installed"
+  fi
+done < "$PROGRAM_LIST_FILE"

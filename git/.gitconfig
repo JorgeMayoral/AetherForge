@@ -1,0 +1,14 @@
+[user]
+	name = Jorge Mayoral Álvarez
+	email = jorge.ma@yorch.dev
+	signingkey = 02EE8FA319B99B41
+[init]
+	defaultBranch = main
+[commit]
+	gpgsign = true
+[alias]
+	undo = reset --soft HEAD^
+[core]
+	pager = delta
+[delta]
+	line-numbers = true

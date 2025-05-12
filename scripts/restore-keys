@@ -1,0 +1,27 @@
+#!/usr/bin/env nu
+
+def main [keys_backup: string] {
+    print "Extracting keys..."
+    tar -xvf $keys_backup
+    cd ./backup
+
+    print "Restoring GPG keys..."
+    do -i { 
+        gpg --import private.gpg
+        gpg --import public.gpg
+        gpg --import trust.gpg
+    }
+    rm *.gpg
+
+    print "Restoring SSH keys"
+    let ssh_dir = $"($env.HOME)/.ssh"
+    mkdir $ssh_dir
+    chmod 644 *.pub
+    mv *.pub $ssh_dir
+    chmod 600 *
+    mv * $ssh_dir
+
+    cd ..
+    rm -rf $keys_backup ./backup
+    notify-send -e -a "Keys restored" "GPG keys & SSH keys has been restored" --icon=network-wireless-encrypted-symbolic -t 3000
+}
