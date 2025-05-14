@@ -15,5 +15,5 @@ sudo pacman -S curl git
 #### Archlinux
 
 ```sh
-<bootstrap script url>
+curl https://raw.githubusercontent.com/JorgeMayoral/AetherForge/refs/heads/main/bootstrap/archlinux.sh | sh
 ```
