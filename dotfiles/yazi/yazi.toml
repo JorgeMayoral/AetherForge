@@ -134,9 +134,9 @@ image_bound = [0, 0]
 suppress_preload = false
 
 [plugin]
-prepend_previewers = [
-  { name = "*.md", run = "glow" },
-]
+# prepend_previewers = [
+#   { name = "*.md", run = "glow" },
+# ]
 preloaders = [
   # { name = "*", cond = "!mime", run = "mime", multi = true, prio = "high" }, # Unnecesary in yazi > 0.3
   # Image
