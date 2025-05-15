@@ -2,39 +2,42 @@
 
 set -e
 
-set-configs () {
-  CONFIG_DIR="$HOME/.config"
-  FOLDERS=("bat" "bottom" "fish" "helix" "k9s" "nushell" "wezterm" "yazi" "zellij")
-  FLAT_CONFIGS=("starship")
+# INSTALL YAY
+cd /tmp
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+cd "$HOME"
 
-  cd dotfiles
+# INSTALL DEPENDENCIES
+yay -S git-delta fish github-cli stow bat fzf erdtree eza starship tealdeer helix xh yazi zellij glow wezterm firefox visual-studio-code-bin unzip catppuccin-cursors-mocha papirus-folders-catppuccin-git noto-fonts-emoji adwaita-fonts kubectl kubectx kubeseal helm k9s
 
-  for folder in "${FOLDERS[@]}"; do
-    rm -rf "$CONFIG_DIR/$folder"
-    mkdir -p "$CONFIG_DIR/$folder"
-    stow --target="$CONFIG_DIR/$folder" "$folder"
-  done
-
-  for config in "${FLAT_CONFIGS[@]}"; do
-    rm -f "$CONFIG_DIR/starship.toml"
-    stow --target="$CONFIG_DIR" "$config"
-  done
-
-  # GIT
-  rm -f "$HOME/.gitconfig"
-  stow --target="$HOME" git
-
-  cd ..
-
-  # Fonts
-  mkdir -p "$HOME/.fonts"
-  stow --target="$HOME/.fonts" fonts
-}
-
+# ADD DOTFILES
 git clone https://github.com/JorgeMayoral/AetherForge.git 
-
 cd "$HOME/AetherForge"
+CONFIG_DIR="$HOME/.config"
+FOLDERS=("bat" "bottom" "fish" "helix" "k9s" "nushell" "wezterm" "yazi" "zellij")
+FLAT_CONFIGS=("starship")
 
-sudo pacman -S git-delta fish github-cli stow bat fzf erdtree eza starship tealdeer helix xh yazi zellij glow wezterm
+cd dotfiles
 
-set-configs
+for folder in "${FOLDERS[@]}"; do
+  rm -rf "$CONFIG_DIR/$folder"
+  mkdir -p "$CONFIG_DIR/$folder"
+  stow --target="$CONFIG_DIR/$folder" "$folder"
+done
+
+for config in "${FLAT_CONFIGS[@]}"; do
+  rm -f "$CONFIG_DIR/starship.toml"
+  stow --target="$CONFIG_DIR" "$config"
+done
+
+# GIT
+rm -f "$HOME/.gitconfig"
+stow --target="$HOME" git
+
+cd ..
+
+# Fonts
+mkdir -p "$HOME/.fonts"
+stow --target="$HOME/.fonts" fonts
