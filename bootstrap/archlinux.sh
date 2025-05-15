@@ -31,7 +31,7 @@ set-configs () {
   stow --target="$HOME/.fonts" fonts
 }
 
-git clone 
+git clone https://github.com/JorgeMayoral/AetherForge.git 
 
 cd "$HOME/AetherForge"
 
