@@ -11,6 +11,8 @@ cd "$HOME"
 
 # INSTALL DEPENDENCIES
 yay -S git-delta fish github-cli stow bat fzf erdtree eza starship tealdeer helix xh yazi zellij glow wezterm firefox visual-studio-code-bin unzip catppuccin-cursors-mocha papirus-folders-catppuccin-git noto-fonts-emoji adwaita-fonts kubectl kubectx kubeseal helm k9s
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+curl -fsSL https://fnm.vercel.app/install | bash -s -- --install-dir "./.fnm" --skip-shell
 
 # ADD DOTFILES
 git clone https://github.com/JorgeMayoral/AetherForge.git 
