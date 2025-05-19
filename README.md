@@ -4,16 +4,13 @@
 
 ### Dependencies
 
-#### Archlinux
-
-```sh
-sudo pacman -S curl git
-```
+- git
+- curl
 
 ### Bootstrap
 
 #### Archlinux
 
 ```sh
-curl https://raw.githubusercontent.com/JorgeMayoral/AetherForge/refs/heads/main/bootstrap/archlinux.sh | sh
+curl https://raw.githubusercontent.com/JorgeMayoral/AetherForge/refs/heads/main/bootstrap/archlinux.sh | bash
 ```
