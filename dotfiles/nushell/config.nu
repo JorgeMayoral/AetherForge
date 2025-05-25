@@ -29,7 +29,7 @@ $env.config.show_banner = false
 # }
 
 
-$env.PROMPT_INDICATOR = " ➜"
+$env.PROMPT_INDICATOR = " ➜ "
 # $env.PROMPT_COMMAND = { $"(pwd | path basename)\n" }
 # $env.PROMPT_COMMAND_RIGHT = { kube_prompt }
 
