@@ -31,7 +31,7 @@ yay -S --needed --noconfirm \
   git-delta fish github-cli stow bat fzf erdtree eza starship tealdeer helix nushell \
   xh yazi zellij glow wezterm visual-studio-code-bin firefox unzip \
   catppuccin-cursors-mocha papirus-folders-catppuccin-git \
-  noto-fonts-emoji adwaita-fonts \
+  noto-fonts-emoji adwaita-fonts ttf-cascadia-code-nerd \
   kubectl kubectx kubeseal helm k9s
 
 log "Installing Rust with rustup"
