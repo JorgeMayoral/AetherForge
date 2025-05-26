@@ -29,7 +29,7 @@ cd "$HOME"
 log "Installing packages with yay"
 yay -S --needed --noconfirm \
   git-delta fish github-cli stow bat fzf erdtree eza starship tealdeer helix nushell \
-  xh yazi zellij glow wezterm visual-studio-code-bin firefox unzip \
+  xh yazi zellij glow wezterm visual-studio-code-bin firefox unzip bottom \
   catppuccin-cursors-mocha papirus-folders-catppuccin-git \
   noto-fonts-emoji adwaita-fonts ttf-cascadia-code-nerd \
   kubectl kubectx kubeseal helm k9s
@@ -78,10 +78,5 @@ done
 log "Stowing .gitconfig"
 rm -f "$HOME/.gitconfig"
 stow --target="$HOME" git
-
-log "Installing fonts"
-cd ..
-mkdir -p "$HOME/.local/share/fonts"
-stow --target="$HOME/.local/share/fonts" fonts
 
 log "Setup complete!"
