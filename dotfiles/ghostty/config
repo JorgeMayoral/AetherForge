@@ -1,0 +1,11 @@
+font-family = "CaskaydiaCove Nerd Font"
+font-feature = calt
+
+# theme = light:catppuccin-latte,dark:catppuccin-mocha
+theme = catppuccin-mocha
+
+background-opacity = 1
+background-blur = true
+
+keybind = alt+t=new_tab
+keybind = alt+x=close_surface
