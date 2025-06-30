@@ -128,7 +128,9 @@
       kubeseal
       kubernetes-helm
       k9s
+      lefthook
       # nodejs_24
+      nil
       rustup
       rust-analyzer
       vscode-extensions.rust-lang.rust-analyzer
