@@ -1,0 +1,9 @@
+# Refer for explanation to following link:
+# https://lefthook.dev/configuration/
+pre-push:
+  jobs:
+    - run: |
+        git-cliff
+        git add CHANGELOG.md
+        git commit -m "chore(changelog): update changelog"
+        git push

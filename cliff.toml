@@ -17,7 +17,7 @@ body = """
     {% for commit in commits %}
         - {% if commit.scope %}*({{ commit.scope }})* {% endif %}\
             {% if commit.breaking %}[**breaking**] {% endif %}\
-            {{ commit.message | upper_first }}\
+            {{ commit.message | upper_first }} ([{{ commit.id | truncate(length=7, end="") }}]({{ commit.id }}))\
     {% endfor %}
 {% endfor %}\n
 """
@@ -96,3 +96,7 @@ topo_order_commits = true
 sort_commits = "newest"
 # Process submodules commits
 recurse_submodules = false
+exclude_commits = true
+
+[git.filters]
+msg_exclude = ["^chore\\(changelog\\):"]
