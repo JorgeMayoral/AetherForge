@@ -69,6 +69,7 @@ All notable changes to this project will be documented in this file.
 
 ### 2025-07-01
 
+- **(changelog)** Add updated changelog in different commit ([a26a94c](a26a94c3d617b8f4dba3ebc5f03fe2577b165380))
 - **(changelog)** Try changelog generation with post-commit hook ([8fa30da](8fa30dae88cf23a186358c1936f9611b5e7205a8))
 - **(changelog)** Update changelog generation ([4430fcf](4430fcff5e8faf66b6decaf4823e7a96e0b8f96c))
 
