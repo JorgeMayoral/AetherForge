@@ -5,15 +5,11 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
-
-  nix.settings.experimental-features = [
-    "nix-command"
-    "flakes"
+  imports = [ # Include the results of the hardware scan.
+    ./hardware-configuration.nix
   ];
+
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -131,6 +127,7 @@
       lefthook
       # nodejs_24
       nil
+      nixfmt
       rustup
       rust-analyzer
       vscode-extensions.rust-lang.rust-analyzer
@@ -164,19 +161,22 @@
     enable = true;
     defaultEditor = true;
   };
+  programs.bash = {
+    interactiveShellInit = ''
+      if [[ $(${pkgs.procps}/bin/ps --no-header --pid=$PPID --format=comm) != "fish" && -z ''${BASH_EXECUTION_STRING} ]]
+      then
+        shopt -q login_shell && LOGIN_OPTION='--login' || LOGIN_OPTION=""
+        exec ${pkgs.fish}/bin/fish $LOGIN_OPTION
+      fi
+    '';
+  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    vim
-    wget
-    curl
-    git
-    gnupg
-  ];
+  environment.systemPackages = with pkgs; [ vim wget curl git gnupg ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
