@@ -6,5 +6,5 @@ post-commit:
         git-cliff
         if ! git diff --quiet -- CHANGELOG.md; then
           git add CHANGELOG.md
-          git commit --amend --no-edit
+          git commit -m "update changelog"
         fi
