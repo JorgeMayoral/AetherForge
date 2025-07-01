@@ -6,7 +6,8 @@ All notable changes to this project will be documented in this file.
 
 ### 2025-07-01
 
-- **(dotfiles)** Update fish config ([2a6e684](2a6e684674e09162f5188cc038f0b08f1b381d71))
+- **(nixos)** Add nixfmt package & fix for using fish as login shell ([be953bb](be953bba7054cadd9a034556bd2cc299ef030cb5))
+- **(dotfiles)** Update fish config ([107d19c](107d19c07d865ce4ec559cd08f71c09c97eee6c7))
 - **(dotfiles)** Update yazi config ([dd89c6f](dd89c6f14890b131444a75cb11cf9f4ef5961aa5))
 
 ### 2025-06-30
