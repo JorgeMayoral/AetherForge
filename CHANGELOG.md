@@ -6,7 +6,8 @@ All notable changes to this project will be documented in this file.
 
 ### 2025-07-01
 
-- **(dotfiles)** Update yazi config ([7838efc](7838efcc1eea75cd3ab3e73af3cb1c52c08f64de))
+- **(dotfiles)** Update fish config ([2a6e684](2a6e684674e09162f5188cc038f0b08f1b381d71))
+- **(dotfiles)** Update yazi config ([dd89c6f](dd89c6f14890b131444a75cb11cf9f4ef5961aa5))
 
 ### 2025-06-30
 

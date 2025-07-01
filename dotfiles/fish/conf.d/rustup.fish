@@ -1,1 +1,2 @@
-source "$HOME/.cargo/env.fish"
+# NOT NEEDED IN NIXOS
+# source "$HOME/.cargo/env.fish"

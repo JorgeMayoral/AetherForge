@@ -1,5 +1,5 @@
 # Path
-set -Ux fish_user_paths $fish_user_paths $HOME/.fnm
+#set -Ux fish_user_paths $fish_user_paths $HOME/.fnm
 set -Ux fish_user_paths $fish_user_paths $HOME/.local/bin
 set -Ux fish_user_paths $fish_user_paths $HOME/AetherForge/scripts
 
