@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## 🚀 Features
 
+### 2025-07-01
+
+- **(dotfiles)** Update yazi config ([7838efc](7838efcc1eea75cd3ab3e73af3cb1c52c08f64de))
+
 ### 2025-06-30
 
 - **(nixos)** Add nil and lefthook packages ([4872978](4872978066ed2b03880acc5a81bf166f2867b316))
@@ -63,7 +67,7 @@ All notable changes to this project will be documented in this file.
 
 ### 2025-07-01
 
-- **(changelog)** Try changelog generation with post-commit hook ([1197af8](1197af80e291130ec2911fc7402b8d32eed69c59))
+- **(changelog)** Try changelog generation with post-commit hook ([8fa30da](8fa30dae88cf23a186358c1936f9611b5e7205a8))
 - **(changelog)** Update changelog generation ([4430fcf](4430fcff5e8faf66b6decaf4823e7a96e0b8f96c))
 
 ### 2025-06-30
