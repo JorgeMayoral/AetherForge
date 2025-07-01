@@ -12,14 +12,28 @@ All notable changes to this project will be documented in this file.\n
 # A Tera template to be rendered for each release in the changelog.
 # See https://keats.github.io/tera/docs/#introduction
 body = """
-{% for group, commits in commits | group_by(attribute="group") %}
-    ### {{ group | striptags | trim | upper_first }}
-    {% for commit in commits %}
-        - {% if commit.scope %}*({{ commit.scope }})* {% endif %}\
-            {% if commit.breaking %}[**breaking**] {% endif %}\
-            {{ commit.message | upper_first }} ([{{ commit.id | truncate(length=7, end="") }}]({{ commit.id }}))\
-    {% endfor %}
-{% endfor %}\n
+{% for group, commits in commits | group_by(attribute="group") %}\
+    ## {{ group | striptags | trim | upper_first }}\n
+    {% set_global dates = [] %}\
+    {% set grouped = commits | group_by(attribute="author.timestamp") %}\
+    {% for timestamp, _ in grouped %}\
+        {% set date = timestamp | int | date(format="%Y-%m-%d") %}\
+        {% if date not in dates %}\
+            {% set_global dates = dates | concat(with=[date]) %}\
+        {% endif %}\
+    {% endfor %}\
+    {% for date in dates | reverse %}\
+        ### {{ date }}\n
+        {% for commit in commits %}\
+            {% if commit.author.timestamp | date(format="%Y-%m-%d") == date %}\
+                - {% if commit.scope %}**({{ commit.scope }})** {% endif %}\
+                    {% if commit.breaking %}[**breaking**] {% endif %}\
+                    {{ commit.message | upper_first }} \
+                    ([{{ commit.id | truncate(length=7, end="") }}]({{ commit.id }}))
+            {% endif %}\
+        {% endfor %}
+    {% endfor %}\
+{% endfor %}
 """
 # A Tera template to be rendered as the changelog's footer.
 # See https://keats.github.io/tera/docs/#introduction
@@ -96,7 +110,3 @@ topo_order_commits = true
 sort_commits = "newest"
 # Process submodules commits
 recurse_submodules = false
-exclude_commits = true
-
-[git.filters]
-msg_exclude = ["^chore\\(changelog\\):"]

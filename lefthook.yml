@@ -5,5 +5,4 @@ pre-push:
     - run: |
         git-cliff
         git add CHANGELOG.md
-        git commit -m "update changelog"
-        git push
+        git commit --ammend --no-edit
