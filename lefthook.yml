@@ -1,8 +1,10 @@
 # Refer for explanation to following link:
 # https://lefthook.dev/configuration/
-pre-push:
+post-commit:
   jobs:
     - run: |
         git-cliff
-        git add CHANGELOG.md
-        git commit --ammend --no-edit
+        if ! git diff --quiet -- CHANGELOG.md; then
+          git add CHANGELOG.md
+          git commit --amend --no-edit
+        fi

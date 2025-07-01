@@ -61,6 +61,11 @@ All notable changes to this project will be documented in this file.
 
 ## ⚙️ Miscellaneous Tasks
 
+### 2025-07-01
+
+- **(changelog)** Try changelog generation with post-commit hook ([1197af8](1197af80e291130ec2911fc7402b8d32eed69c59))
+- **(changelog)** Update changelog generation ([4430fcf](4430fcff5e8faf66b6decaf4823e7a96e0b8f96c))
+
 ### 2025-06-30
 
 - Fix lefthook config ([fc7acc7](fc7acc7ba4fd9a8cdd7f837f0f626b39578c49e7))
