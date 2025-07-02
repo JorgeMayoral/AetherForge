@@ -65,6 +65,10 @@ All notable changes to this project will be documented in this file.
 
 ## 📚 Documentation
 
+### 2025-07-02
+
+- Add nixos and dotfiles instructions ([5927d17](5927d171e9b42edca8c747b67aef98f900fa6e86))
+
 ### 2025-05-13
 
 - Add arch dependencies ([7acaf4a](7acaf4a43672be0c98df218cdfa951558ba75cd7))
