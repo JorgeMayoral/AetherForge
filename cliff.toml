@@ -29,7 +29,7 @@ body = """
                 - {% if commit.scope %}**({{ commit.scope }})** {% endif %}\
                     {% if commit.breaking %}[**breaking**] {% endif %}\
                     {{ commit.message | upper_first }} \
-                    ([{{ commit.id | truncate(length=7, end="") }}]({{ commit.id }}))
+                    ([{{ commit.id | truncate(length=7, end="") }}](https://github.com/JorgeMayoral/AetherForge/commit/{{ commit.id }}))
             {% endif %}\
         {% endfor %}
     {% endfor %}\
