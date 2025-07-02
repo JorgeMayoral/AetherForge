@@ -63,6 +63,12 @@ All notable changes to this project will be documented in this file.
 - Update wezterm keybinds and readme ([ec01490](https://github.com/JorgeMayoral/AetherForge/commit/ec014906e103fe8de9c525584e8df33b4e2ad220))
 - Initialize configs ([d55e859](https://github.com/JorgeMayoral/AetherForge/commit/d55e859d7e9238a3edf5ce0b1cc9282b7e888192))
 
+## 🐛 Bug Fixes
+
+### 2025-07-02
+
+- **(nixos)** Remove hardware configuration ([5e741e0](https://github.com/JorgeMayoral/AetherForge/commit/5e741e084f864eac738c6ecb4e26eeae78b63959))
+
 ## 📚 Documentation
 
 ### 2025-07-02
