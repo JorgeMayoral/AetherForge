@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## 🚀 Features
 
+### 2025-07-02
+
+- **(gnome)** Add dconf config and backup/restore scripts ([bfe4bc8](bfe4bc8b86f382c5368eb56dcaaba7997728b6b5))
+
 ### 2025-07-01
 
 - **(nixos)** Add nixfmt package & fix for using fish as login shell ([be953bb](be953bba7054cadd9a034556bd2cc299ef030cb5))
