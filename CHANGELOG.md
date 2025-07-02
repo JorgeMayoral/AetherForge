@@ -83,6 +83,7 @@ All notable changes to this project will be documented in this file.
 
 ### 2025-07-02
 
+- Update instructions and add gitignore file ([79fb9aa](https://github.com/JorgeMayoral/AetherForge/commit/79fb9aa7859b424a6c3e27b9c0f41c9bedd7eab8))
 - **(changelog)** Fix commit url ([7c34155](https://github.com/JorgeMayoral/AetherForge/commit/7c341556e608562a93f0b02a8e9a018d995edcf4))
 
 ### 2025-07-01
