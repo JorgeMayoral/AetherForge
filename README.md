@@ -16,6 +16,12 @@ If using `gh` for cloning the repo:
 gh repo clone JorgeMayoral/AetherForge
 ```
 
+Copy hardware configuration
+
+```sh
+cp /etc/nixos/hardware-configuration.nix ~/AetherForge/nixos
+```
+
 Rebuild the system using the flake:
 
 ```sh
@@ -40,17 +46,17 @@ curl https://raw.githubusercontent.com/JorgeMayoral/AetherForge/refs/heads/main/
 Archlinux bootstrap script add the dotfiles, but for NixOS or doing it manually run this:
 
 ```sh
-cd ~/AetherForge/dotfiles
-stow --target="$HOME/.config/bat" "bat"
-stow --target="$HOME/.config/bottom" "bottom"
-stow --target="$HOME/.config/fish" "fish"
-stow --target="$HOME/.config/ghostty" "ghostty"
-stow --target="$HOME/.config/helix" "helix"
-stow --target="$HOME/.config/k9s" "k9s"
-stow --target="$HOME/.config/nushell" "nushell"
-stow --target="$HOME/.config/wezterm" "wezterm"
-stow --target="$HOME/.config/yazi" "yazi"
-stow --target="$HOME/.config/zellij" "zellij"
+DOTFILES_DIR="$HOME/AetherForge/dotfiles"
+CONFIGS=("bat" "bottom" "fish" "ghostty" "helix" "k9s" "nushell" "wezterm" "yazi" "zellij")
+
+cd "$DOTFILES_DIR"
+
+for config in "${CONFIGS[@]}"; do
+  rm -rf "$CONFIG_DIR/$folder"
+  mkdir -p "$CONFIG_DIR/$folder"
+  stow --target="$CONFIG_DIR/$folder" "$folder"
+done
+
 stow --target="$HOME/.config" "starship"
 stow --target="$HOME" "git"
 ```
