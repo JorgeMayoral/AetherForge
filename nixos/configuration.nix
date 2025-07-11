@@ -121,6 +121,7 @@
       kubernetes-helm
       k9s
       lefthook
+      devenv
       # nodejs_24
       nil
       nixfmt
