@@ -71,6 +71,7 @@ All notable changes to this project will be documented in this file.
 
 ### 2025-07-11
 
+- **(scripts)** Use nixos-rebuild as impure in rebuild script ([2b3900c](https://github.com/JorgeMayoral/AetherForge/commit/2b3900c12a84d81c5fea0bb5fd74c612409d37c9))
 - **(nixos)** Fix hardware configuration ([70b6007](https://github.com/JorgeMayoral/AetherForge/commit/70b6007836bb2744f05c4890d2707b1ec384cf2f))
 
 ### 2025-07-02
