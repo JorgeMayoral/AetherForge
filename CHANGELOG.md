@@ -65,6 +65,10 @@ All notable changes to this project will be documented in this file.
 
 ## 🐛 Bug Fixes
 
+### 2025-07-11
+
+- **(nixos)** Fix hardware configuration ([70b6007](https://github.com/JorgeMayoral/AetherForge/commit/70b6007836bb2744f05c4890d2707b1ec384cf2f))
+
 ### 2025-07-02
 
 - **(nixos)** Remove hardware configuration ([5e741e0](https://github.com/JorgeMayoral/AetherForge/commit/5e741e084f864eac738c6ecb4e26eeae78b63959))
