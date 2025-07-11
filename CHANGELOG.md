@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### 2025-07-11
 
+- **(nixos)** Add nix trusted users ([afb87c1](https://github.com/JorgeMayoral/AetherForge/commit/afb87c1ab57475412014adfe483b7af73cf0fc33))
 - **(nixos)** Add devenv package ([6669d33](https://github.com/JorgeMayoral/AetherForge/commit/6669d33b8d621e1191b52bd0e807d7c84e9827f5))
 - **(nixos)** Add ulauncher ([bddc634](https://github.com/JorgeMayoral/AetherForge/commit/bddc6344c18839017bfd14a7fa9df6dc4b508113))
 
