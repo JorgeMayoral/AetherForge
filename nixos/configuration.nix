@@ -134,6 +134,8 @@
       libreoffice
       gimp3
       obsidian
+      ulauncher
+      wmctrl
       papers
       simple-scan
       gnome-tweaks
