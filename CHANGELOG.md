@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## 🚀 Features
 
+### 2025-07-11
+
+- **(nixos)** Add ulauncher ([bddc634](https://github.com/JorgeMayoral/AetherForge/commit/bddc6344c18839017bfd14a7fa9df6dc4b508113))
+
 ### 2025-07-02
 
 - **(gnome)** Add dconf config and backup/restore scripts ([bfe4bc8](https://github.com/JorgeMayoral/AetherForge/commit/bfe4bc8b86f382c5368eb56dcaaba7997728b6b5))
