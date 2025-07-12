@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## 🚀 Features
 
+### 2025-07-12
+
+- **(nixos)** Add nh package ([87082a2](https://github.com/JorgeMayoral/AetherForge/commit/87082a2ba7f0ad1af02b2489f5a70c7e733d3cb6))
+
 ### 2025-07-11
 
 - **(nixos)** Add nix trusted users ([afb87c1](https://github.com/JorgeMayoral/AetherForge/commit/afb87c1ab57475412014adfe483b7af73cf0fc33))
