@@ -172,6 +172,10 @@
       fi
     '';
   };
+  programs.nh = {
+    enable = true;
+    flake = "/home/yorch/AetherForge/nixos";
+  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
