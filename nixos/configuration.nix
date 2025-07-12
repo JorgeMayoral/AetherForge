@@ -127,7 +127,7 @@
       devenv
       # nodejs_24
       nil
-      nixfmt
+      nixfmt-rfc-style
       rustup
       rust-analyzer
       vscode-extensions.rust-lang.rust-analyzer
