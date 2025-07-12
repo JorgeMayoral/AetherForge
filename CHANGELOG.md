@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### 2025-07-12
 
+- **(nixos)** Rename nixfmt package ([7971d6a](https://github.com/JorgeMayoral/AetherForge/commit/7971d6a29c5a835b28db5dc2e1f871df7b26cef4))
 - **(nixos)** Add nh package ([87082a2](https://github.com/JorgeMayoral/AetherForge/commit/87082a2ba7f0ad1af02b2489f5a70c7e733d3cb6))
 
 ### 2025-07-11
