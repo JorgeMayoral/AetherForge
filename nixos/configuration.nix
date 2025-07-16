@@ -132,9 +132,11 @@
       rust-analyzer
       vscode-extensions.rust-lang.rust-analyzer
       gcc
+      uv
       fastfetch
       libnotify
       ripgrep
+      google-chrome
       libreoffice
       gimp3
       obsidian
@@ -157,6 +159,7 @@
   ];
 
   # Programs
+  programs.nix-ld.enable = true;
   programs.firefox.enable = true;
   programs.fish.enable = true;
   programs.neovim = {
