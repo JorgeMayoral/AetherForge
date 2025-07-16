@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## 🚀 Features
 
+### 2025-07-16
+
+- **(nixos)** Add uv, google-chrome and nix-ld ([4c8266c](https://github.com/JorgeMayoral/AetherForge/commit/4c8266ce52b07925b3931659042e0e31313d5686))
+
 ### 2025-07-12
 
 - **(nixos)** Update flake ([f2a41ee](https://github.com/JorgeMayoral/AetherForge/commit/f2a41ee8872b8e97a8eb0cf2441728412711225a))
