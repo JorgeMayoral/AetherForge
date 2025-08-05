@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## 🚀 Features
 
+### 2025-08-05
+
+- **(nixos)** Remove ulauncher ([51464a7](https://github.com/JorgeMayoral/AetherForge/commit/51464a72aa80c2204e6bbd175720cae8b7526148))
+
 ### 2025-07-16
 
 - **(nixos)** Add uv, google-chrome and nix-ld ([4c8266c](https://github.com/JorgeMayoral/AetherForge/commit/4c8266ce52b07925b3931659042e0e31313d5686))
