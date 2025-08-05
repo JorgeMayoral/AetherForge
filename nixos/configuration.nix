@@ -6,8 +6,14 @@
 
 {
   nix.settings = {
-    experimental-features = [ "nix-command" "flakes" ];
-    trusted-users = [ "root" "@wheel" ];
+    experimental-features = [
+      "nix-command"
+      "flakes"
+    ];
+    trusted-users = [
+      "root"
+      "@wheel"
+    ];
   };
 
   # Bootloader.
@@ -94,7 +100,12 @@
   users.users.yorch = {
     isNormalUser = true;
     description = "Jorge Mayoral Álvarez";
-    extraGroups = [ "networkmanager" "wheel" "scanner" "lp" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "scanner"
+      "lp"
+    ];
     shell = pkgs.fish;
     packages = with pkgs; [
       delta
@@ -140,8 +151,6 @@
       libreoffice
       gimp3
       obsidian
-      ulauncher
-      wmctrl
       papers
       simple-scan
       gnome-tweaks
@@ -185,7 +194,13 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [ vim wget curl git gnupg ];
+  environment.systemPackages = with pkgs; [
+    vim
+    wget
+    curl
+    git
+    gnupg
+  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
