@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## 🚀 Features
 
+### 2025-08-07
+
+- **(nixos)** Upgrade packages ([73d47a6](https://github.com/JorgeMayoral/AetherForge/commit/73d47a623df3c559d17a2409a726b6012ef49cd5))
+
 ### 2025-08-05
 
 - **(nixos)** Remove ulauncher ([51464a7](https://github.com/JorgeMayoral/AetherForge/commit/51464a72aa80c2204e6bbd175720cae8b7526148))
