@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## 🚀 Features
 
+### 2025-08-12
+
+- **(nixos)** Add home-manager ([f3c2779](https://github.com/JorgeMayoral/AetherForge/commit/f3c2779609617d52e1565bc49b7d8fa926d9cbf1))
+
 ### 2025-08-07
 
 - **(nixos)** Upgrade packages ([73d47a6](https://github.com/JorgeMayoral/AetherForge/commit/73d47a623df3c559d17a2409a726b6012ef49cd5))
