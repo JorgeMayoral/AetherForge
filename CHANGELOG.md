@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### 2025-08-13
 
+- **(dotfiles)** Update hyprland config ([e27036b](https://github.com/JorgeMayoral/AetherForge/commit/e27036b1d1560742f943b4a8e0c2d57c4e22fd64))
 - **(scripts)** Update reset-waybar script ([79a151c](https://github.com/JorgeMayoral/AetherForge/commit/79a151c429f3cc3da6b3aeedebc1269be402447b))
 - **(dotfiles)** Use starship as nushell prompt ([10c4c54](https://github.com/JorgeMayoral/AetherForge/commit/10c4c5445f06d0b67affc15bdceaaf66350358b7))
 - **(dotfiles)** Update waybar style ([8d56db5](https://github.com/JorgeMayoral/AetherForge/commit/8d56db592853ac6ed11a2a73ad547b27894d1c2f))
