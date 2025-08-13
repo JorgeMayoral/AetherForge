@@ -106,8 +106,9 @@
       "scanner"
       "lp"
     ];
-    shell = pkgs.fish;
-    packages = with pkgs; [ ];
+    # shell = pkgs.fish;
+    shell = pkgs.nushell;
+    packages = [ ];
   };
 
   fonts.packages = with pkgs; [
@@ -116,6 +117,7 @@
   ];
 
   # Programs
+  programs.hyprland.enable = true;
   programs.nix-ld.enable = true;
   programs.firefox.enable = true;
   programs.fish.enable = true;

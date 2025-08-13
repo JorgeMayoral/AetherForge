@@ -53,6 +53,8 @@
     gnomeExtensions.space-bar
     gnomeExtensions.tweaks-in-system-menu
     gnomeExtensions.caffeine
+    walker
+    waybar
   ];
 
   home.stateVersion = "25.11";
