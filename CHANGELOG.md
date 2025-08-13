@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### 2025-08-13
 
+- **(nixos)** Add swayosd, mako, catppuccin cursor and hyprpaper ([06b2414](https://github.com/JorgeMayoral/AetherForge/commit/06b24148cdcf867cee2daf525d63591af4ed995c))
 - **(dotfiles)** Add walker config ([1c29c76](https://github.com/JorgeMayoral/AetherForge/commit/1c29c76134c7a45b11e1d9440bc18ea691cd3a07))
 - **(dotfiles)** Update hypr configs ([f25aedd](https://github.com/JorgeMayoral/AetherForge/commit/f25aeddc6c6a651216ecb9374e21dc2f5e9e7894))
 - **(nixos)** Add hyprland and more ([51e12c5](https://github.com/JorgeMayoral/AetherForge/commit/51e12c54f16b754c86fd4a6b95180556bb456db7))
