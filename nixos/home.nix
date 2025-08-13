@@ -53,8 +53,14 @@
     gnomeExtensions.space-bar
     gnomeExtensions.tweaks-in-system-menu
     gnomeExtensions.caffeine
+
+    # Apps for Hyprland
     walker
     waybar
+    swayosd
+    mako
+    catppuccin-cursors.mochaSky
+    hyprpaper
   ];
 
   home.stateVersion = "25.11";
