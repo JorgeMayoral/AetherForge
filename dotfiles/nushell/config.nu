@@ -21,17 +21,9 @@ use std/util "path add"
 $env.config.buffer_editor = "code"
 $env.config.show_banner = false
 
-# Prompt
-# def kube_prompt [] {
-#     let k_prompt =  ([(kubectl ns -c)] | str trim)
-#     let d_prompt = ([(date now | date format '%r')] | str join)
-#     $"\(($k_prompt)\) ($d_prompt)"
-# }
-
-
-$env.PROMPT_INDICATOR = " ➜ "
-# $env.PROMPT_COMMAND = { $"(pwd | path basename)\n" }
-# $env.PROMPT_COMMAND_RIGHT = { kube_prompt }
-
 # PATH
 path add "~/.fnm"
+path add "~/AetherForge/scripts"
+
+mkdir ($nu.data-dir | path join "vendor/autoload")
+starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
