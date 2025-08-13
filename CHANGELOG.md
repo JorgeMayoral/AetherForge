@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### 2025-08-13
 
+- **(dotfiles)** Update hypr configs ([f25aedd](https://github.com/JorgeMayoral/AetherForge/commit/f25aeddc6c6a651216ecb9374e21dc2f5e9e7894))
 - **(nixos)** Add hyprland and more ([51e12c5](https://github.com/JorgeMayoral/AetherForge/commit/51e12c54f16b754c86fd4a6b95180556bb456db7))
 
 ### 2025-08-12
