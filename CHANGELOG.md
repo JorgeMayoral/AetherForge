@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## 🚀 Features
 
+### 2025-08-13
+
+- **(nixos)** Add hyprland and more ([51e12c5](https://github.com/JorgeMayoral/AetherForge/commit/51e12c54f16b754c86fd4a6b95180556bb456db7))
+
 ### 2025-08-12
 
 - **(nixos)** Add home-manager ([f3c2779](https://github.com/JorgeMayoral/AetherForge/commit/f3c2779609617d52e1565bc49b7d8fa926d9cbf1))
