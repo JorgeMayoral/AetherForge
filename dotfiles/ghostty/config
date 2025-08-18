@@ -1,10 +1,11 @@
-font-family = "CaskaydiaCove Nerd Font"
+# font-family = "CaskaydiaCove Nerd Font"
+font-family = "DepartureMono Nerd Font Mono"
 font-feature = calt
 
 # theme = light:catppuccin-latte,dark:catppuccin-mocha
 theme = catppuccin-mocha
 
-background-opacity = 1
+background-opacity = 0.5
 background-blur = true
 
 keybind = alt+t=new_tab
