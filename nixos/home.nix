@@ -25,6 +25,7 @@
     vscode
     unzip
     bottom
+    zoxide
     kubectl
     kubectx
     kubeseal
@@ -39,6 +40,7 @@
     gcc
     uv
     fastfetch
+    nerdfetch
     libnotify
     ripgrep
     google-chrome
@@ -47,6 +49,7 @@
     obsidian
     papers
     simple-scan
+    inkscape
     gnome-tweaks
     gnomeExtensions.blur-my-shell
     gnomeExtensions.tophat
@@ -60,7 +63,10 @@
     swayosd
     mako
     catppuccin-cursors.mochaSky
+    nordzy-cursor-theme
+    nordzy-icon-theme
     hyprpaper
+    hyprpolkitagent
   ];
 
   home.stateVersion = "25.11";
