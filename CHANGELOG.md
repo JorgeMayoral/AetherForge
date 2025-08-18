@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## 🚀 Features
 
+### 2025-08-18
+
+- Add new wallpaper and use it in hyprland ([aab9790](https://github.com/JorgeMayoral/AetherForge/commit/aab979000a3cad185cd7d5766b408e92e89d001b))
+
 ### 2025-08-13
 
 - **(dotfiles)** Update hyprland config ([e27036b](https://github.com/JorgeMayoral/AetherForge/commit/e27036b1d1560742f943b4a8e0c2d57c4e22fd64))
