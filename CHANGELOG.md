@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### 2025-08-18
 
+- **(nixos)** Add departure mono font ([d9fd889](https://github.com/JorgeMayoral/AetherForge/commit/d9fd88946d3b2df8ec1a35d73ed93a44f9ce3aa1))
 - **(dotfiles)** Update starship config ([b2a4325](https://github.com/JorgeMayoral/AetherForge/commit/b2a43257bbea064a93a3a4bed121d2e4c6ecad33))
 - **(dotfiles)** Update nushell config ([7232354](https://github.com/JorgeMayoral/AetherForge/commit/723235433f976327aa44e1a48f3a301aad91a777))
 - **(dotfiles)** Update waybar config ([d27cbe3](https://github.com/JorgeMayoral/AetherForge/commit/d27cbe304649d44a0452e8065dd9347d229c8643))
