@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### 2025-08-18
 
+- **(dotfiles)** Update nushell config ([7232354](https://github.com/JorgeMayoral/AetherForge/commit/723235433f976327aa44e1a48f3a301aad91a777))
 - **(dotfiles)** Update waybar config ([d27cbe3](https://github.com/JorgeMayoral/AetherForge/commit/d27cbe304649d44a0452e8065dd9347d229c8643))
 - Add new wallpaper and use it in hyprland ([aab9790](https://github.com/JorgeMayoral/AetherForge/commit/aab979000a3cad185cd7d5766b408e92e89d001b))
 
