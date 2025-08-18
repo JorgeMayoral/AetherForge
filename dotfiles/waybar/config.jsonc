@@ -16,28 +16,12 @@
   "modules-right": [
     "network",
     "pulseaudio",
+    "pulseaudio#mic",
     "backlight",
     "battery",
     "battery#bat2",
     "tray"
   ],
-  // "sway/workspaces": {
-  //   "disable-scroll": true,
-  //   "all-outputs": true,
-  //   "warp-on-scroll": false,
-  //   // "format": "{name}: {icon}",
-  //   // "format": "{icon}",
-  //   // "format-icons": {
-  //   //   "1": "",
-  //   //   "2": "",
-  //   //   "3": "",
-  //   //   "4": "",
-  //   //   "5": "",
-  //   //   "urgent": "",
-  //   //   "focused": "",
-  //   //   "default": "",
-  //   // },
-  // },
   "clock": {
     // "timezone": "America/New_York",
     "format": "{:%Y-%m-%d - %H:%M}",
@@ -66,20 +50,19 @@
   },
   "network": {
     // "interface": "wlp2*", // (Optional) To force the use of this interface
-    "format-wifi": " {essid} ({signalStrength}%)",
+    "format-wifi": " ",
     "format-ethernet": "󱂇 {ipaddr}/{cidr}",
-    "tooltip-format": "󰑩 via {gwaddr}",
+    "tooltip-format": "{essid} ({signalStrength}%)\n󰑩 via {gwaddr}",
     "format-linked": " {ifname} (No IP)",
     "format-disconnected": "Disconnected ⚠"
   },
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
-    "format": "{icon} {volume}% | {format_source}",
+    "format": "{icon}",
+    "tooltip-format": "{icon} {volume}%",
     "format-bluetooth": "{volume}% {icon} {format_source}",
     "format-bluetooth-muted": " {icon} {format_source}",
     "format-muted": " {format_source}",
-    "format-source": " ",
-    "format-source-muted": " ",
     "format-icons": {
       "headphone": "",
       "hands-free": "",
@@ -95,9 +78,17 @@
     },
     "on-click": "pavucontrol"
   },
+  "pulseaudio#mic": {
+    // "scroll-step": 1, // %, can be a float
+    "format": "{format_source}",
+    "format-source": " ",
+    "format-source-muted": " ",
+    "on-click": "pavucontrol"
+  },
   "backlight": {
     // "device": "acpi_video1",
-    "format": "{icon} {percent}%",
+    "format": "{icon}",
+    "tooltip-format": "{icon} {percent}%",
     "format-icons": [
       "",
       "",
@@ -117,9 +108,9 @@
       "critical": 15
     },
     "format": "{icon} {capacity}%",
-    "format-full": "{icon} {capacity}%",
+    "format-full": "{icon}",
     "format-charging": "󰂄 {capacity}%",
-    "format-plugged": " {capacity}%",
+    "format-plugged": "",
     "format-alt": "{icon} {time}",
     // "format-good": "", // An empty format will hide the module
     // "format-full": "",
