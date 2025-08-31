@@ -2,7 +2,12 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 {
   nix.settings = {
@@ -57,6 +62,16 @@
   # Enable the GNOME Desktop Environment.
   services.displayManager.gdm.enable = true;
   services.desktopManager.gnome.enable = true;
+
+  specialisation.kde.configuration = {
+    system.nixos.tags = [ "kde" ];
+
+    services.displayManager.sddm.enable = true;
+    services.displayManager.gdm.enable = lib.mkForce false;
+
+    services.desktopManager.plasma6.enable = true;
+    services.desktopManager.gnome.enable = lib.mkForce false;
+  };
 
   # Configure keymap in X11
   services.xserver.xkb = {
