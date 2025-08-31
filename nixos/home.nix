@@ -23,6 +23,7 @@
     wezterm
     ghostty
     vscode
+    zed-editor
     unzip
     bottom
     zoxide
@@ -41,6 +42,7 @@
     uv
     fastfetch
     nerdfetch
+    terminaltexteffects
     libnotify
     ripgrep
     google-chrome
@@ -66,6 +68,7 @@
     nordzy-cursor-theme
     nordzy-icon-theme
     hyprpaper
+    hyprlock
     hyprpolkitagent
   ];
 
