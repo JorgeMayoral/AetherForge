@@ -36,6 +36,7 @@
     devenv
     # nodejs_24
     nil
+    nixd
     nixfmt-rfc-style
     rustup
     gcc
@@ -65,8 +66,6 @@
     swayosd
     mako
     catppuccin-cursors.mochaSky
-    nordzy-cursor-theme
-    nordzy-icon-theme
     hyprpaper
     hyprlock
     hyprpolkitagent
