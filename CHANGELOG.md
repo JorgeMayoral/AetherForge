@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### 2025-08-31
 
+- **(nixos)** Add zed, tte and hyprlock packages ([deca2a5](https://github.com/JorgeMayoral/AetherForge/commit/deca2a52dd122b0965a9ddbb49e1dff6e71c880b))
 - **(scripts)** Add power menu script ([6783925](https://github.com/JorgeMayoral/AetherForge/commit/6783925539d3f620b636bb0a8313f54db4a8b822))
 - **(dotfiles)** Add hyprlock config ([76a976d](https://github.com/JorgeMayoral/AetherForge/commit/76a976d3bd7f5e51b02d6ccc12f71173fb07c16e))
 
