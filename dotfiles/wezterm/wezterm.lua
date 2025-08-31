@@ -7,7 +7,7 @@ config.enable_wayland = false
 config.color_scheme = "Catppuccin Mocha"
 config.window_background_opacity = 0.75
 config.window_decorations = "NONE"
-config.font = wezterm.font("CaskaydiaCove Nerd Font")
+config.font = wezterm.font("DepartureMono Nerd Font")
 
 -- Tabs configuration
 config.use_fancy_tab_bar = false
