@@ -66,6 +66,10 @@
     swayosd
     mako
     catppuccin-cursors.mochaSky
+    (catppuccin-papirus-folders.override {
+      flavor = "mocha";
+      accent = "sky";
+    })
     hyprpaper
     hyprlock
     hyprpolkitagent
