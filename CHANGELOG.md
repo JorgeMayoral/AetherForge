@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### 2025-08-31
 
+- **(nixos)** Add nixd and remove nordzy cursors and icons ([32a2e0e](https://github.com/JorgeMayoral/AetherForge/commit/32a2e0eaa138b356ad8bf0b58f421fdac03e629b))
 - **(dotfiles)** Minor updates ([cb3224e](https://github.com/JorgeMayoral/AetherForge/commit/cb3224e8d5f6612dc1bfe82c9f26e951264d90e5))
 - **(nixos)** Add kde plasma as a specialisation ([92f5591](https://github.com/JorgeMayoral/AetherForge/commit/92f5591d6e85f7ed0fc9cd0390bbc5bb53263e7c))
 - **(dotfiles)** Update hyprland configurations ([7e679ce](https://github.com/JorgeMayoral/AetherForge/commit/7e679ced5bf0079deb43ad59097b695777d08552))
