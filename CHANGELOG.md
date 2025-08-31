@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### 2025-08-31
 
+- **(nixos)** Add kde plasma as a specialisation ([92f5591](https://github.com/JorgeMayoral/AetherForge/commit/92f5591d6e85f7ed0fc9cd0390bbc5bb53263e7c))
 - **(dotfiles)** Update hyprland configurations ([7e679ce](https://github.com/JorgeMayoral/AetherForge/commit/7e679ced5bf0079deb43ad59097b695777d08552))
 - **(nixos)** Add zed, tte and hyprlock packages ([deca2a5](https://github.com/JorgeMayoral/AetherForge/commit/deca2a52dd122b0965a9ddbb49e1dff6e71c880b))
 - **(scripts)** Add power menu script ([6783925](https://github.com/JorgeMayoral/AetherForge/commit/6783925539d3f620b636bb0a8313f54db4a8b822))
