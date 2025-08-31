@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## 🚀 Features
 
+### 2025-08-31
+
+- **(dotfiles)** Add hyprlock config ([76a976d](https://github.com/JorgeMayoral/AetherForge/commit/76a976d3bd7f5e51b02d6ccc12f71173fb07c16e))
+
 ### 2025-08-18
 
 - **(nixos)** Add multiple packages ([b1d13af](https://github.com/JorgeMayoral/AetherForge/commit/b1d13af65e0a1227dd9d6addc2cc6a9a8f6f326f))
