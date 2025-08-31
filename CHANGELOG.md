@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### 2025-08-31
 
+- **(scripts)** Add power menu script ([6783925](https://github.com/JorgeMayoral/AetherForge/commit/6783925539d3f620b636bb0a8313f54db4a8b822))
 - **(dotfiles)** Add hyprlock config ([76a976d](https://github.com/JorgeMayoral/AetherForge/commit/76a976d3bd7f5e51b02d6ccc12f71173fb07c16e))
 
 ### 2025-08-18
