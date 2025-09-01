@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### 2025-09-01
 
+- **(bootstrap)** Update archlinux bootstrap script ([00142b1](https://github.com/JorgeMayoral/AetherForge/commit/00142b16a502602dd38dd641eb1ef23fc288acbd))
 - **(dotfiles)** Add zed config ([3d55041](https://github.com/JorgeMayoral/AetherForge/commit/3d55041ab7690fa0025a348ff648cd4ae9bd8b61))
 
 ### 2025-08-31
