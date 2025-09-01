@@ -28,8 +28,11 @@ cd "$HOME"
 
 log "Installing packages with yay"
 yay -S --needed --noconfirm \
+  vim wget curl git gnupg \
   git-delta fish github-cli stow bat fzf erdtree eza starship tealdeer helix nushell \
-  xh yazi zellij glow wezterm visual-studio-code-bin firefox unzip bottom \
+  xh yazi zellij glow git-cliff wezterm visual-studio-code-bin zed firefox google-chrome unzip bottom \
+  zoxide lefthook-bin fastfetch nerdfetch python-terminaltexteffects libnotify ripgrep \
+  libreoffice-fresh gimp inkscape obsidian \
   catppuccin-cursors-mocha papirus-folders-catppuccin-git \
   noto-fonts-emoji adwaita-fonts ttf-cascadia-code-nerd \
   kubectl kubectx kubeseal helm k9s
@@ -41,12 +44,19 @@ if ! command -v rustup >/dev/null 2>&1; then
 else
   log "Rust already installed"
 fi
-  
+
 log "Installing FNM"
 if [ ! -d "$HOME/.fnm" ]; then
   curl -fsSL https://fnm.vercel.app/install | bash -s -- --install-dir "$HOME/.fnm" --skip-shell
 else
   log "FNM already installed"
+fi
+
+log "Installing UV"
+if ! command -v uv >/dev/null 2>&1; then
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+else
+    log "UV already installed"
 fi
 
 DOTFILES_REPO="git@github.com:JorgeMayoral/AetherForge.git"
@@ -61,7 +71,7 @@ log "Stowing dotfiles"
 CONFIG_DIR="$HOME/.config"
 cd "$DOTFILES_DIR/dotfiles"
 
-FOLDERS=("bat" "bottom" "fish" "helix" "k9s" "nushell" "wezterm" "yazi" "zellij")
+FOLDERS=("bat" "bottom" "fish" "helix" "k9s" "nushell" "wezterm" "yazi" "zed" "zellij")
 FLAT_CONFIGS=("starship")
 
 for folder in "${FOLDERS[@]}"; do
