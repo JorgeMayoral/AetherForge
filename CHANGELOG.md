@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## 🚀 Features
 
+### 2025-09-01
+
+- **(dotfiles)** Add zed config ([3d55041](https://github.com/JorgeMayoral/AetherForge/commit/3d55041ab7690fa0025a348ff648cd4ae9bd8b61))
+
 ### 2025-08-31
 
 - **(nixos)** Customize catppuccin papirus icons ([6140cff](https://github.com/JorgeMayoral/AetherForge/commit/6140cff44634c8b7916a357907fd50e4b8c882d7))
