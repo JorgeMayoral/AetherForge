@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## 🚀 Features
 
+### 2025-09-21
+
+- **(bootstrap)** Add more packages in archlinux bootstrap script ([e2d7897](https://github.com/JorgeMayoral/AetherForge/commit/e2d7897c2b03a4f8afb77663a59f9f72ae4eae1f))
+- **(dotfiles)** Update nushell, wezterm and zed configs ([9bace0e](https://github.com/JorgeMayoral/AetherForge/commit/9bace0e630680c85101baf4b85438fb33af2d725))
+
 ### 2025-09-01
 
 - **(bootstrap)** Update archlinux bootstrap script ([00142b1](https://github.com/JorgeMayoral/AetherForge/commit/00142b16a502602dd38dd641eb1ef23fc288acbd))
