@@ -32,10 +32,12 @@ yay -S --needed --noconfirm \
   git-delta fish github-cli stow bat fzf erdtree eza starship tealdeer helix nushell \
   xh yazi zellij glow git-cliff wezterm visual-studio-code-bin zed firefox google-chrome unzip bottom \
   zoxide lefthook-bin fastfetch nerdfetch python-terminaltexteffects libnotify ripgrep \
+  bacon just \
   libreoffice-fresh gimp inkscape obsidian \
   catppuccin-cursors-mocha papirus-folders-catppuccin-git \
   noto-fonts-emoji adwaita-fonts ttf-cascadia-code-nerd \
-  kubectl kubectx kubeseal helm k9s
+  kubectl kubectx kubeseal helm k9s \
+  sane skanlite sane-airscan ipp-usb
 
 log "Installing Rust with rustup"
 if ! command -v rustup >/dev/null 2>&1; then
