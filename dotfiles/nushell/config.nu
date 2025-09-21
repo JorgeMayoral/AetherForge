@@ -99,6 +99,9 @@ path add "~/.fnm"
 path add "~/.local/bin"
 path add "~/AetherForge/scripts"
 
+fnm env --json | from json | load-env
+path add ($env.FNM_MULTISHELL_PATH + /bin)
+
 mkdir ($nu.data-dir | path join "vendor/autoload")
 starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
 source ~/.zoxide.nu

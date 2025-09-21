@@ -15,7 +15,7 @@
   "theme": {
     "mode": "system",
     "light": "Catppuccin Mocha (sky)",
-    "dark": "One Dark"
+    "dark": "Catppuccin Mocha (sky)"
   },
   "inlay_hints": {
     "enabled": true
@@ -32,5 +32,6 @@
     "inline_blame": {
       "enabled": true
     }
-  }
+  },
+  "disable_ai": true
 }
