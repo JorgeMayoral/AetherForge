@@ -85,6 +85,26 @@ $env.config = {
         }
         use_ls_colors: true # set this to true to enable file/path/directory completions using LS_COLORS
     }
+
+    hooks: {
+        env_change: {
+            PWD: [
+                {
+                    code: {
+                        if not ($env.TMUX? | is-not-empty) {
+                            if ("tmux" | path exists) and ("tmux" | path type) == "file" {
+                                let answer = (input "Run ./tmux script? [y/N]: ")
+                                if ($answer | str downcase | str trim) == "y" {
+                                    ^bash ./tmux
+                                    ^tput reset
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
 }
 
 $env.FZF_DEFAULT_OPTS = "
