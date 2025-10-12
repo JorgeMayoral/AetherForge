@@ -161,6 +161,10 @@ All notable changes to this project will be documented in this file.
 
 ## ⚙️ Miscellaneous Tasks
 
+### 2025-10-12
+
+- Update gitignore file ([0fd316d](https://github.com/JorgeMayoral/AetherForge/commit/0fd316d7d74fb7c3a98e0594fa996312b0da2953))
+
 ### 2025-07-02
 
 - Update instructions and add gitignore file ([79fb9aa](https://github.com/JorgeMayoral/AetherForge/commit/79fb9aa7859b424a6c3e27b9c0f41c9bedd7eab8))
