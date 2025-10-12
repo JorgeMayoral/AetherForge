@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### 2025-10-12
 
+- **(dotfiles)** Add tmux config ([6220bf2](https://github.com/JorgeMayoral/AetherForge/commit/6220bf2b29042b3478f431d9bdd20dbf05b34795))
 - **(dotfiles)** Add tmux on cd nushell hook ([273be72](https://github.com/JorgeMayoral/AetherForge/commit/273be72fcff02f6dacd100300043aa5c7f4a208b))
 - **(bootstrap)** Update archlinux bootstrap script ([0b87262](https://github.com/JorgeMayoral/AetherForge/commit/0b872622243ac4c2426085d1163cb28573d8e740))
 
