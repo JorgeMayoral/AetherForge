@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## 🚀 Features
 
+### 2025-10-12
+
+- **(bootstrap)** Update archlinux bootstrap script ([0b87262](https://github.com/JorgeMayoral/AetherForge/commit/0b872622243ac4c2426085d1163cb28573d8e740))
+
 ### 2025-09-21
 
 - **(bootstrap)** Add more packages in archlinux bootstrap script ([e2d7897](https://github.com/JorgeMayoral/AetherForge/commit/e2d7897c2b03a4f8afb77663a59f9f72ae4eae1f))
