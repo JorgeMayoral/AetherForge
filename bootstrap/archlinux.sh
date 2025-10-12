@@ -32,7 +32,7 @@ yay -S --needed --noconfirm \
   git-delta fish github-cli stow bat fzf erdtree eza starship tealdeer helix nushell \
   xh yazi zellij glow git-cliff wezterm visual-studio-code-bin zed firefox google-chrome unzip bottom \
   zoxide lefthook-bin fastfetch nerdfetch python-terminaltexteffects libnotify ripgrep \
-  bacon just \
+  bacon just tmux \
   libreoffice-fresh gimp inkscape obsidian \
   catppuccin-cursors-mocha papirus-folders-catppuccin-git \
   noto-fonts-emoji adwaita-fonts ttf-cascadia-code-nerd \
@@ -73,7 +73,7 @@ log "Stowing dotfiles"
 CONFIG_DIR="$HOME/.config"
 cd "$DOTFILES_DIR/dotfiles"
 
-FOLDERS=("bat" "bottom" "fish" "helix" "k9s" "nushell" "wezterm" "yazi" "zed" "zellij")
+FOLDERS=("bat" "bottom" "fish" "helix" "k9s" "nushell" "wezterm" "yazi" "zed" "zellij" "tmux")
 FLAT_CONFIGS=("starship")
 
 for folder in "${FOLDERS[@]}"; do
