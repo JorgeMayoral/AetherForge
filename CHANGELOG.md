@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## 🚀 Features
 
+### 2025-10-17
+
+- Remove hyprland related things ([d0c24db](https://github.com/JorgeMayoral/AetherForge/commit/d0c24db9dc0ad4b45128314e3fd756a3d10240b1))
+
 ### 2025-10-12
 
 - **(dotfiles)** Add tmux config ([6220bf2](https://github.com/JorgeMayoral/AetherForge/commit/6220bf2b29042b3478f431d9bdd20dbf05b34795))
