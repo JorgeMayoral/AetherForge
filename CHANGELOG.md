@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### 2025-10-17
 
+- Remove unnecessary scripts ([a4425ef](https://github.com/JorgeMayoral/AetherForge/commit/a4425eff0c4c5a388b7ca17105208915503b594a))
 - Remove hyprland related things ([d0c24db](https://github.com/JorgeMayoral/AetherForge/commit/d0c24db9dc0ad4b45128314e3fd756a3d10240b1))
 
 ### 2025-10-12
