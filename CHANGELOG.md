@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### 2025-10-17
 
+- **(bootstrap)** Add fedora bootstrap script ([0d9e9fa](https://github.com/JorgeMayoral/AetherForge/commit/0d9e9fad86363bce0c3b9f617152e4df77e3a5ed))
 - **(fonts)** Add departuremono nerd fonts ([d6d2206](https://github.com/JorgeMayoral/AetherForge/commit/d6d2206e10c4654efa2c89380b04ea027c702d4c))
 - Remove unnecessary scripts ([a4425ef](https://github.com/JorgeMayoral/AetherForge/commit/a4425eff0c4c5a388b7ca17105208915503b594a))
 - Remove hyprland related things ([d0c24db](https://github.com/JorgeMayoral/AetherForge/commit/d0c24db9dc0ad4b45128314e3fd756a3d10240b1))
