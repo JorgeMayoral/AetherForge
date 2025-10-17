@@ -170,6 +170,10 @@ All notable changes to this project will be documented in this file.
 
 ## ⚙️ Miscellaneous Tasks
 
+### 2025-10-17
+
+- Update readme with fedora instructions ([404c9cb](https://github.com/JorgeMayoral/AetherForge/commit/404c9cbeb818eeaf68a4f1737c76663ddceaf5bd))
+
 ### 2025-10-12
 
 - Update gitignore file ([0fd316d](https://github.com/JorgeMayoral/AetherForge/commit/0fd316d7d74fb7c3a98e0594fa996312b0da2953))
