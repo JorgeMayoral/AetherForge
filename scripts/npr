@@ -1,6 +1,0 @@
-#!/usr/bin/env nu
-
-def main [pkg: string] {
-  nix profile remove $"($pkg)"
-  nix profile list --json | from json | get elements | transpose key data | get key | save ~/dotfiles/nix-packages -f
-}

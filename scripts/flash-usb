@@ -1,7 +1,0 @@
-#!/usr/bin/env nu
-
-def main [iso: string, target: string] {
-  sudo dd status=progress if=$"($iso)" of=$"($target)" conv=fsync
-  let iso_name = $iso | split row "/" | last
-  notify-send "USB Flashed" $"Your USB in ($target) has been flashed with ($iso_name)" -i drive-harddisk-usb-symbolic -e
-}

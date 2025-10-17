@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-case $(echo -e "  Lock\n󰤄  Suspend\n󰜉  Restart\n󰐥  Shutdown" | walker --dmenu -p "System" "${args[@]}") in
-  *Lock*) hyprlock ;;
-  *Suspend*) systemctl suspend ;;
-  *Restart*) systemctl reboot ;;
-  *Shutdown*) systemctl poweroff ;;
-  *) ;;
-esac
