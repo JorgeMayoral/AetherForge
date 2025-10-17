@@ -28,6 +28,19 @@ Rebuild the system using the flake:
 nixos-rebuild switch --flake ~/AetherForge/nixos#aether --experimental-features 'nix-command flakes'
 ```
 
+### Fedora
+
+#### Dependencies
+
+- git
+- curl
+
+#### Instructions
+
+```sh
+curl https://raw.githubusercontent.com/JorgeMayoral/AetherForge/refs/heads/main/bootstrap/fedora.sh | bash
+```
+
 ### Archlinux
 
 #### Dependencies
