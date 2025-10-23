@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## 🚀 Features
 
+### 2025-10-23
+
+- **(dotfiles)** Add newsboat config ([18bd507](https://github.com/JorgeMayoral/AetherForge/commit/18bd507d3468d60384d4775664b55ae4dc60103f))
+
 ### 2025-10-17
 
 - **(bootstrap)** Add fedora bootstrap script ([0d9e9fa](https://github.com/JorgeMayoral/AetherForge/commit/0d9e9fad86363bce0c3b9f617152e4df77e3a5ed))
