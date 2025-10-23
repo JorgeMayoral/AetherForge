@@ -1,0 +1,3 @@
+include ~/.config/newsboat/dark
+
+browser "google-chrome-stable %u >/dev/null 2>&1 &"
