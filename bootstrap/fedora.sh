@@ -17,7 +17,7 @@ fi
 
 # --- PACKAGES FROM DNF ---
 
-DNF_PACKAGES=("vim" "wget" "curl" "git" "gnupg" "git-delta" "stow" "rust-bat" "fzf" "helix" "golang" "unzip" "7zip" "zoxide" "fastfetch" "libnotify" "ripgrep" "just" "tmux" "helm" "libreoffice" "gimp" "inkscape" "hexyl" "hugo")
+DNF_PACKAGES=("vim" "wget" "curl" "git" "gnupg" "git-delta" "stow" "rust-bat" "fzf" "helix" "golang" "unzip" "7zip" "zoxide" "fastfetch" "libnotify" "ripgrep" "just" "tmux" "helm" "libreoffice" "gimp" "inkscape" "hexyl" "newsboat")
 
 for pkg in "${DNF_PACKAGES[@]}"; do
     sudo dnf install "$pkg"
@@ -104,7 +104,7 @@ log "Stowing dotfiles"
 CONFIG_DIR="$HOME/.config"
 cd "$DOTFILES_DIR/dotfiles"
 
-FOLDERS=("bat" "bottom" "fish" "helix" "k9s" "nushell" "wezterm" "yazi" "zed" "zellij" "tmux")
+FOLDERS=("bat" "bottom" "fish" "helix" "k9s" "nushell" "wezterm" "yazi" "zed" "zellij" "tmux" "newsboat")
 FLAT_CONFIGS=("starship")
 
 for folder in "${FOLDERS[@]}"; do
