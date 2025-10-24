@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## 🚀 Features
 
+### 2025-10-24
+
+- **(dotfiles)** Prepare zed and wezterm configs for kde 6.5 ([55e94f3](https://github.com/JorgeMayoral/AetherForge/commit/55e94f3f6e36d01a8b537deb54e8b32b50d60531))
+
 ### 2025-10-23
 
 - **(dotfiles)** Add newsboat config ([18bd507](https://github.com/JorgeMayoral/AetherForge/commit/18bd507d3468d60384d4775664b55ae4dc60103f))
