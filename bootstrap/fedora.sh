@@ -131,7 +131,9 @@ cp -r * /usr/share/fonts
 mkdir -p /usr/share/icons
 cd /usr/share/icons
 curl -LOsS https://github.com/catppuccin/cursors/releases/download/v2.0.0/catppuccin-mocha-sky-cursors.zip
+curl -LOsS https://github.com/catppuccin/cursors/releases/download/v2.0.0/catppuccin-latte-sky-cursors.zip
 unzip catppuccin-mocha-sky-cursors.zip
+unzip catppuccin-latte-sky-cursors.zip
 
 ## ICONS
 cd /tmp
@@ -140,6 +142,7 @@ cd papirus-folders
 sudo cp -r src/* /usr/share/icons/Papirus
 curl -LO https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-folders/master/papirus-folders && chmod +x ./papirus-folders
 ./papirus-folders -C cat-mocha-sky --theme Papirus-Dark
+./papirus-folders -C cat-latte-sky --theme Papirus-Light
 
 # ---------
 
