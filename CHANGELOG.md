@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### 2025-10-24
 
+- **(bootstrap)** Update fedora script ([a5fab21](https://github.com/JorgeMayoral/AetherForge/commit/a5fab217c4b448a8e4bee64878160f6b29be6950))
 - **(dotfiles)** Prepare zed and wezterm configs for kde 6.5 ([55e94f3](https://github.com/JorgeMayoral/AetherForge/commit/55e94f3f6e36d01a8b537deb54e8b32b50d60531))
 
 ### 2025-10-23
