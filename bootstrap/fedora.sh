@@ -17,11 +17,9 @@ fi
 
 # --- PACKAGES FROM DNF ---
 
-DNF_PACKAGES=("vim" "wget" "curl" "git" "gnupg" "git-delta" "stow" "rust-bat" "fzf" "helix" "golang" "unzip" "7zip" "zoxide" "fastfetch" "libnotify" "ripgrep" "just" "tmux" "helm" "libreoffice" "gimp" "inkscape" "hexyl" "newsboat")
+DNF_PACKAGES="vim wget curl git gnupg git-delta stow bat fzf helix golang unzip 7zip zoxide fastfetch libnotify ripgrep just tmux helm libreoffice gimp inkscape hexyl newsboat merkuro"
 
-for pkg in "${DNF_PACKAGES[@]}"; do
-    sudo dnf install "$pkg"
-done
+sudo dnf install $DNF_PACKAGES
 
 ## --- SPECIAL CASES + COPR ---
 sudo dnf install dnf5-plugins
@@ -41,7 +39,8 @@ curl -f https://zed.dev/install.sh | sh
 sudo curl -fsSL https://raw.githubusercontent.com/ThatOneCalculator/NerdFetch/main/nerdfetch -o /usr/bin/nerdfetch
 sudo chmod +x /usr/bin/nerdfetch
 
-curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+mkdir -p $HOME/.local/bin
+curl -LOo $HOME/.local/bin/kubectl "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 
 # --- FLATPAKS ---
 flatpak install flathub md.obsidian.Obsidian
@@ -66,11 +65,9 @@ else
   log "Rust already installed"
 fi
 
-CARGO_CRATES=("erdtree" "bacon" "eza" "starship" "tealdeer" "nushell" "xh" "yazi" "zellij" "git-cliff" "hexhog")
+CARGO_CRATES="erdtree bacon eza starship tealdeer nu xh yazi-build zellij git-cliff hexhog"
 
-for crate in"${CARGO_CRATES[@]}"; do
-    cargo install --locked "$crate"
-done
+cargo install --locked $CARGO_CRATES
 
 # --- FNM ---
 
@@ -125,21 +122,22 @@ stow --target="$HOME" git
 # --- STYLING --
 ## FONTS
 cd "$DOTFILES_DIR/fonts"
-cp -r * /usr/share/fonts
+sudo cp -r * /usr/share/fonts
 
 ## CURSORS
 mkdir -p /usr/share/icons
 cd /usr/share/icons
-curl -LOsS https://github.com/catppuccin/cursors/releases/download/v2.0.0/catppuccin-mocha-sky-cursors.zip
-curl -LOsS https://github.com/catppuccin/cursors/releases/download/v2.0.0/catppuccin-latte-sky-cursors.zip
-unzip catppuccin-mocha-sky-cursors.zip
-unzip catppuccin-latte-sky-cursors.zip
+sudo curl -LOsS https://github.com/catppuccin/cursors/releases/download/v2.0.0/catppuccin-mocha-sky-cursors.zip
+sudo curl -LOsS https://github.com/catppuccin/cursors/releases/download/v2.0.0/catppuccin-latte-sky-cursors.zip
+sudo unzip catppuccin-mocha-sky-cursors.zip
+sudo unzip catppuccin-latte-sky-cursors.zip
 
 ## ICONS
+wget -qO- https://git.io/papirus-icon-theme-install | sh
 cd /tmp
 git clone https://github.com/catppuccin/papirus-folders.git
 cd papirus-folders
-sudo cp -r src/* /usr/share/icons/Papirus
+sudo mkdir -p /usr/share/icons/Papirus
 curl -LO https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-folders/master/papirus-folders && chmod +x ./papirus-folders
 ./papirus-folders -C cat-mocha-sky --theme Papirus-Dark
 ./papirus-folders -C cat-latte-sky --theme Papirus-Light
