@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## 🚀 Features
 
+### 2025-10-29
+
+- **(dotfiles)** Update nushell and wezterm configs ([9bc3672](https://github.com/JorgeMayoral/AetherForge/commit/9bc367223c72db8d59b8483970c010ddea38001f))
+- **(bootstrap)** Update fedora script ([5fb1fdf](https://github.com/JorgeMayoral/AetherForge/commit/5fb1fdf3315c58089491acca927098346dd5d461))
+
 ### 2025-10-24
 
 - **(bootstrap)** Update fedora script ([a5fab21](https://github.com/JorgeMayoral/AetherForge/commit/a5fab217c4b448a8e4bee64878160f6b29be6950))
