@@ -117,6 +117,7 @@ $env.FZF_DEFAULT_OPTS = "
 # PATH
 path add "~/.fnm"
 path add "~/.local/bin"
+path add "~/go/bin"
 path add "~/AetherForge/scripts"
 
 fnm env --json | from json | load-env
@@ -131,4 +132,4 @@ alias cat = bat -p -P
 alias cd = z #zoxide
 alias l = ls -a
 alias k = kubectl
-alias zed = zeditor
+#alias zed = zeditor
