@@ -132,4 +132,5 @@ alias cat = bat -p -P
 alias cd = z #zoxide
 alias l = ls -a
 alias k = kubectl
+alias docker = podman
 #alias zed = zeditor
