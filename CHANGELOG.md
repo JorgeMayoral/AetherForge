@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## 🚀 Features
 
+### 2025-11-15
+
+- **(scripts)** Add tools for python scripts development ([4e018ab](https://github.com/JorgeMayoral/AetherForge/commit/4e018ab78b269ca84aa5e30dae667636e1dba274))
+
 ### 2025-10-29
 
 - **(dotfiles)** Update nushell and wezterm configs ([9bc3672](https://github.com/JorgeMayoral/AetherForge/commit/9bc367223c72db8d59b8483970c010ddea38001f))
