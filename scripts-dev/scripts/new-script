@@ -1,0 +1,49 @@
+#!/usr/bin/env -S uv run --script
+
+# /// script
+# requires-python = ">=3.14"
+# dependencies = [
+#     "typer",
+# ]
+# ///
+
+import os
+
+import typer
+
+app = typer.Typer()
+
+CONTENT = """#!/usr/bin/env -S uv run --script
+
+# /// script
+# requires-python = ">=3.14"
+# dependencies = [
+#     "typer",
+# ]
+# ///
+
+import typer
+
+app = typer.Typer()
+
+@app.command()
+def main():
+    print("Hello, World!")
+
+
+if __name__ == "__main__":
+    app()
+"""
+
+
+@app.command()
+def create(filename: str):
+    path = f"{os.getcwd()}/{filename}"
+    with open(path, mode="x") as new_script:
+        new_script.write(CONTENT)
+
+    os.chmod(path, 0o744)
+
+
+if __name__ == "__main__":
+    app()

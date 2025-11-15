@@ -1,0 +1,68 @@
+#!/usr/bin/env -S uv run --script
+
+# /// script
+# requires-python = ">=3.14"
+# dependencies = [
+#     "typer",
+# ]
+# ///
+
+import datetime
+import logging
+import os
+import subprocess
+import tarfile
+
+import typer
+from rich.logging import RichHandler
+
+FORMAT = "%(message)s"
+logging.basicConfig(
+    level="NOTSET", format=FORMAT, datefmt="[%X]", handlers=[RichHandler()]
+)
+
+LOG = logging.getLogger("backup-keys")
+app = typer.Typer()
+
+
+@app.command()
+def main():
+    now = datetime.datetime.now().isoformat()
+    backup_folder = f"/tmp/backups/{now}"
+    os.makedirs(backup_folder)
+    LOG.debug("Exporting public keys...")
+    subprocess.run(
+        [
+            "gpg",
+            "--export",
+            "--export-options",
+            "backup",
+            "--output",
+            f"{backup_folder}/public.gpg",
+        ]
+    )
+    LOG.debug("Exporting private keys...")
+    subprocess.run(
+        [
+            "gpg",
+            "--export-secret-keys",
+            "--export-options",
+            "backup",
+            "--output",
+            f"{backup_folder}/private.gpg",
+        ]
+    )
+
+    LOG.debug("Adding GPG keys to tar file...")
+    output_dir = os.getenv("HOME") or "~"  # TODO: Make configurable
+    with tarfile.open(f"{output_dir}/backup_{now}.tar.gz", mode="w:gz") as tar_file:
+        tar_file.add(
+            f"{backup_folder}/public.gpg", arcname="public.gpg", recursive=False
+        )
+        tar_file.add(
+            f"{backup_folder}/private.gpg", arcname="private.gpg", recursive=False
+        )
+
+
+if __name__ == "__main__":
+    app()
