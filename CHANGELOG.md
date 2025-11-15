@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### 2025-11-15
 
+- **(dotfiles)** Add docker alias for podman ([f1b7c44](https://github.com/JorgeMayoral/AetherForge/commit/f1b7c4456d3aff360c6908d8e79813b360307310))
 - **(scripts)** Add tools for python scripts development ([4e018ab](https://github.com/JorgeMayoral/AetherForge/commit/4e018ab78b269ca84aa5e30dae667636e1dba274))
 
 ### 2025-10-29
